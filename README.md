@@ -4,6 +4,18 @@ This is a code repository containing Python scripts used to compute results in
 the manuscript [*A Stability Analysis of Neural Networks and Its Application to
 Tsunami Early Warning*](https://doi.org/10.31223/X5D954) (DOI:10.31223/X5D954).
 
+Following is a BibTeX example for citing this code repository.
+```
+@misc{RimSuri2024,
+  doi = {10.5281/zenodo.12663552},
+  url = {https://zenodo.org/doi/10.5281/zenodo.12663552},
+  author = {Donsub Rim and Sanah Suri},
+  title = {Code repository},
+  year = {2024}
+}
+```
+[![DOI](https://zenodo.org/badge/824469379.svg)](https://zenodo.org/doi/10.5281/zenodo.12663552)
+
 ## Requirements
 
 The code was tested with Python version ``3.8.5`` with the following packages
