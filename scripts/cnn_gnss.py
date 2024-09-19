@@ -333,7 +333,7 @@ class GNSS_gauge_model():
         elif array_type == 'numpy_array_txt':
             out = np.loadtxt(ffname)
         elif array_type == 'numpy_memmap':
-            out = np.memmap(ffname, dtype=np.float, mode='r')
+            out = np.memmap(ffname, dtype=float, mode='r')
         else:
             raise NotImplementedError
 
@@ -391,11 +391,11 @@ class GNSS_gauge_model():
 
         # load shuffled indices
         train_index = load_array('{:s}_train_index.txt'.format(data_name), 
-                                 array_type='numpy_array_txt').astype(np.int)
+                                 array_type='numpy_array_txt').astype(int)
         valid_index = load_array('{:s}_valid_index.txt'.format(data_name),
-                                 array_type='numpy_array_txt').astype(np.int)
+                                 array_type='numpy_array_txt').astype(int)
         test_index = load_array('{:s}_test_index.txt'.format(data_name),
-                                 array_type='numpy_array_txt').astype(np.int)
+                                 array_type='numpy_array_txt').astype(int)
 
         # slice into test and training sets
         # creat a list of batches for training, test sets
